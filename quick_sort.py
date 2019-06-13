@@ -2,7 +2,8 @@
 '''
 Quicksort is a divide and conquer algorithm （recursively break down the problem into sub problems);
 in-place algorithm; 
-worst-case running time is Θ(n2) ; its average-case running time is Θ(n log n)
+Worst-case running time is O(N2), when the array is already sorted either in increasing or decreasing order, cuz need to call Partition n times, each element is pivot once; 
+Average-case running time is Θ(nlogn), when after every call to partition, pivot is median of input
 
 Main idea:  Pick an input item, call it pivot, and place it in its final location in the sorted array by re-organizing the array (just pick the last item of arr as pivot)
             so that:
@@ -31,6 +32,9 @@ def Partition(arr , left , right):
 
     arr[right] , arr[split + 1] = arr[split + 1] , arr[right]
     split += 1
+
+    print(arr)
+    
     return split
 
 
