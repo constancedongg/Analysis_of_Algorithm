@@ -1,4 +1,4 @@
 
 
-import math
-print(math.sqrt(365 * 2 * math.log(2)))
+a = [{1: 0 , 2:0} ,{1:3 , 2: 3}]
+print(a[0][1])
