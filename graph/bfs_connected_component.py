@@ -35,7 +35,7 @@ def bfs_connected_component(graph , start):
 graph = {'A': ['B', 'C', 'E'],
          'B': ['A','D', 'E'],
          'C': ['A', 'F', 'G'],
-         'D': ['B'],
+         'D': ['B' , 'E'],
          'E': ['A', 'B','D'],
          'F': ['C'],
          'G': ['C']}
