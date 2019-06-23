@@ -25,6 +25,7 @@ def bfs_connected_component(graph , start):
             neighbors = graph[node]
             for neighbor in neighbors:
                 queue.append(neighbor)
+            print(queue)
     return explored
 
 

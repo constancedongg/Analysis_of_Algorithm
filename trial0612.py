@@ -1,6 +1,12 @@
 
 
-a = '1'
-b = '2'
+def hi(a):
+    if 6 > a:
+        return None
+    else:
+        return 1
 
-print(int(a) * int(b))
+    return 123
+
+a = 5
+print(hi(a))

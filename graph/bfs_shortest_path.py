@@ -3,7 +3,7 @@
 Application: 
 - Find people at a given distance from a person in social networks.
 - Identify all neighbour locations in GPS systems.
-- Search whether there’s a path between two nodes of a graph.
+- Search whether there’s a path between two nodes of a graph and shortest path.
 
 Time complexity: exponential
 Space complexity: even worse, needs high memory

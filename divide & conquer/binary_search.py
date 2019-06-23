@@ -28,3 +28,25 @@ x = 2
 left = 0
 right = len(A) - 1
 print(binary_search(A , x , left , right))
+
+#!===============
+def binary_search(num , target , start , end):
+
+
+    if start < end:
+        mid = (start + end) // 2
+
+        if num[mid] == target:
+            return mid
+
+        elif num[mid] < target:
+            return binary_search(num, target , mid + 1 , end)
+        
+        else:
+            return binary_search(num , target , start , mid)
+    else:
+        return -1
+
+arr = [0,2,5,6,9]
+target = 9
+print(binary_search(arr , target , 0 , len(arr)))
