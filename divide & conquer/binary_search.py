@@ -6,7 +6,7 @@ Correctness can be proved by induction.
 T(n) = T(n / 2) + O(1) , a = 1, b = 2, k = 0, since a = b^k = 1 , O(n^k * logn)
 Time Complexity: O(logn)
 '''
-
+#========== iterative =============#
 def binary_search(A , x , left , right):
     mid = left + (right - left) // 2
     if x == A[mid]:   
@@ -29,8 +29,8 @@ left = 0
 right = len(A) - 1
 print(binary_search(A , x , left , right))
 
-#!===============
-def binary_search(num , target , start , end):
+#=============== recursive ===============#
+def binary_search2(num , target , start , end):
 
 
     if start < end:
