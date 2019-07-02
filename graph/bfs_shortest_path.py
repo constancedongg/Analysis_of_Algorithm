@@ -3,7 +3,7 @@
 Application: 
 - Find people at a given distance from a person in social networks.
 - Identify all neighbour locations in GPS systems.
-- Search whether there’s a path between two nodes of a graph and shortest path.
+- Search whether there is a path between two nodes of a graph and shortest path.
 
 Time complexity: exponential
 Space complexity: even worse, needs high memory
@@ -43,6 +43,3 @@ graph = {'A': ['B', 'C', 'E'],
          'H': []}
 print(bfs_shortest_path(graph , 'A' , 'G'))
 
-print(bfs_shortest_path(graph , 'D' , 'G'))
-
-print(bfs_shortest_path(graph , 'D' , 'H'))
