@@ -41,3 +41,14 @@ graph = {'A': ['B', 'C', 'E'],
          'F': ['C'],
          'G': ['C']}
 print(bfs_connected_component(graph , 'A'))
+# ['A', 'B', 'C', 'E', 'D', 'F', 'G']
+
+graph1 = {'A': ['B', 'C', 'E'],
+         'B': ['A','D', 'E'],
+         'C': ['A', 'F'],
+         'D': ['B' , 'E'],
+         'E': ['A', 'B','D'],
+         'F': ['C'],
+         'G': ['M'],
+         'M': ['G']}
+print(bfs_connected_component(graph1 , 'A'))
